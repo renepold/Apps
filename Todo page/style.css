@@ -92,8 +92,11 @@ form button:hover {
     min-width: 25rem;
     max-width: 50rem;
     overflow: auto;
-    
 }
+
+.scrollable-element {
+    scrollbar-color: red yellow;
+  }
 
 .fa-minus-square,
 .fa-check-square {

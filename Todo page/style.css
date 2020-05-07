@@ -88,7 +88,11 @@ form button:hover {
 }
 
 .todo-item {
-    padding: 0 0.5rem; 
+    padding: 0 0.5rem;
+    min-width: 25rem;
+    max-width: 50rem;
+    overflow: auto;
+    
 }
 
 .fa-minus-square,

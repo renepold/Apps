@@ -29,6 +29,7 @@ form input, form button {
     font-size: 2rem;
     border: none;
     background: white;
+    color: #333;
 }
 
 form button {
@@ -192,7 +193,6 @@ label #menuclose {
     cursor: pointer;
     color: white;
     font-size: 1.5rem;
-    background-color: #ff471a;
     transition: all 0.5s ease;
     border-radius: 10%;
     top: 1.85em;
@@ -226,4 +226,12 @@ label #menuclose {
 
 #check:checked ~ label #menuclose {
     display: initial;
+}
+
+footer {
+    display: flex;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
 }

@@ -260,3 +260,89 @@ form {
     bottom: -35px;
     color: var(--clr-light);
 }
+
+.menubar {
+    position: absolute;
+    padding: 2rem;
+    width: 250px;
+    top: 3em;
+    left: -250px;
+    transition: all 1s ease;
+}
+
+.menubar ul {
+    list-style: none;
+}
+
+.menubar a{
+    text-decoration: none;
+    color: white;
+    line-height: 3rem;
+    padding-left: 0.5rem;
+    transition: all 0.5s ease;
+}
+
+.menubar ul li a:hover {
+    padding-left: 1rem;
+    font-size: 1.7rem;
+    line-height: 4rem;
+    transition: all 0.5s ease;
+    text-shadow: 1px 1px black
+}
+
+#check {
+    display: none;
+}
+
+label #menuopen,
+label #menuclose {
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+    border-radius: 10%;
+    top: 1.85em;
+    left: 2.5rem;
+}
+
+label #menuopen:hover,
+label #menuclose:hover {
+    background-color: rgb(224, 186, 13);
+    transition: all 0.5s ease;
+}
+
+label #menuopen {
+    padding: 8px 10px;
+}
+
+label #menuclose {
+    z-index: 5;
+    padding: 8px 13px;
+    display:none;
+}
+
+#check:checked ~ .menubar {
+    left: 0;
+    transition: all 1s ease;
+}
+
+#check:checked ~ label #menuopen {
+    display: none;
+}
+
+#check:checked ~ label #menuclose {
+    display: initial;
+}
+
+.task {
+    overflow-wrap: break-word;
+}
+
+footer {
+    display: flex;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+}

@@ -16,17 +16,18 @@
 
     <div class="all-tasks">
         <h2 class="task-list-title">My lists</h2>
-        <ul class="task-list">
-          <li class="list-name active-list">Youtube</li>
+        <ul class="task-list" data-lists>
+          <!--<li class="list-name active-list">Youtube</li>
           <li class="list-name">Work</li>
-          <li class="list-name">Grocery</li>
+          <li class="list-name">Grocery</li>-->
         </ul>
   
-        <form action="">
+        <form action="" data-new-list-form>
           <input 
             type="text"
+            data-new-list-input
             class="new list"
-            placeholder="new list name"
+            placeholder="add new list"
             aria-label="new list name"
           />
           <button class="btn create" aria-label="create new list">+</button>
@@ -79,11 +80,11 @@
           </div>
   
           <div class="new-task-creator">
-              <form action="">
+                <form action="">
                   <input 
                     type="text"
                     class="new task"
-                    placeholder="new task name"
+                    placeholder="add new task"
                     aria-label="new task name"
                   />
                   <button class="btn create" aria-label="create new task">+</button>
@@ -92,16 +93,12 @@
   
           <div class="delete-stuff">
             <button class="btn delete">Clear completed tasks</button>
-            <button class="btn delete">Delete list</button>
+            <button class="btn delete" data-delete-list-button>Delete list</button>
           </div>
         </div>
       </div>
     </div>
 
 </body>
-
-<footer>
-    <small>&copy; Copyright 2020, Rene Põldmaa</small>
-</footer>
 
 </html>

@@ -46,16 +46,20 @@
     line-height: 1.7;
     list-style: circle;
     padding-left: 1.1em;
+    min-height: 5rem;
 }
   
 .list-name {
     cursor: pointer;
+    transition: ease all 0.5s;
 }
   
 .list-name:hover {
     opacity: 0.7;
+    padding: 2px;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
 }
-  
   
 form {
     display: flex;
@@ -134,6 +138,9 @@ form {
   
 .active-list {
     font-weight: 700;
+    padding-left: 2px;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
 }
   
 .todo-list {
@@ -213,7 +220,6 @@ form {
 .task:hover .custom-checkbox,
 [type="checkbox"]:focus + label .custom-checkbox {
     transform: scale(1.2);
-    color: var(--clr-primary);
 }
   
 [type="checkbox"]:checked + label .custom-checkbox {
@@ -253,12 +259,4 @@ form {
     left: 0;
     bottom: -35px;
     color: var(--clr-light);
-}
-
-footer {
-    display: flex;
-    font-size: 1rem;
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
 }
